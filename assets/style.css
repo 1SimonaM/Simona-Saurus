@@ -1,0 +1,73 @@
+body {
+font-family: Arial, Helvetica, sans-serif;  
+padding: 0;  
+margin: 0;
+}
+
+.header {
+position: absolute;
+top: 0; /*at the very top there is no gap between the parent & child- its very closet to the top of the screen*/
+left: 0; 
+width: 100%;
+background-color:black;
+padding-block: 10px;
+z-index: 4;
+}
+
+.header .container {  
+    /* this is selector wants to style the container that only direct child of the header */
+padding-inline: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}  
+
+.navbar-list {
+display: flex;  
+/* diplay flex allow the elements to side by side. */
+gap: 16px;
+} 
+
+/* #hero */
+
+.hero {
+position: relative;
+padding-block-start: 100px;
+background-color: lightblue; 
+height: 250px;
+/* background-image: url(.assets/); - ex.. for when I want to add image inside url.for instance if they locate on documents i type ./document/*/
+}
+
+/* now we are going to add style <div class="subtitle"> on html inside the container line 39 */
+.subtitle {
+display: inline-block;
+padding-inline: 20px;
+position: absolute;
+background-color: rgb(108, 208, 221);
+right: 0;
+bottom: 0;
+margin-block-end: 20px;
+margin-right: 60px;
+}
+.section .container {
+display: flex;
+padding: 50px;
+
+}
+
+.images {
+display: flex;
+flex-wrap: wrap;
+}
+
+.images img {
+width: 50%;
+
+}
+
+#SurfReport {
+width: 100%;
+}
+
+
+

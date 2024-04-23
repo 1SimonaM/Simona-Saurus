@@ -96,19 +96,18 @@ body {
 
 .featured-image {
   width: 100%;
+  padding-inline: 10px;
   margin-bottom: 10px;
-  
+  background-color: red;
   /* border: 5px solid #5cdde1; */
 }
 
 .image-catalogue {
-  padding-block: 10px;
   display: flex;
   justify-content: space-between;
   gap: 5px;
   width: 100%;
 }
-
 /* Hyperlink styling */
 .header a {
   color: #60c5ff;

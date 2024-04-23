@@ -1,168 +1,276 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Body styling */
 body {
-    background-color: #EAEAEA; /* background-color: white; */
-    width: 100%;
+  background-color: #eaeaea; /* background-color: white; */
+  width: 100%;
 }
-
 
 /* Header styling */
 
-.header { 
-    position: absolute; 
-    top: 0; /*at the very top there is no gap between the parent & child- its very closet to the top of the screen*/ 
-    left: 0; 
-    width: 100%; 
-    background-color:black; 
-    padding-block: 10px; 
-    z-index: 4; 
-    } 
-    
-    .header .container {
-        /* this is selector wants to style the container that only direct child of the header */ 
-        padding-inline: 60px; 
-        display: flex;
-        justify-content: space-between;
-        margin-top: 0;
-        height: 50px;
-        align-items: center; 
-    }
-        
-    .navbar-list { 
-    display: flex;
-    gap: 16px;
-    }
-    /* diplay flex allow the elements to side by side. / gap: 16px; }  */
+.header {
+  position: absolute;
+  top: 0; /*at the very top there is no gap between the parent & child- its very closet to the top of the screen*/
+  left: 0;
+  width: 100%;
+  background-color: black;
+  padding-block: 10px;
+  z-index: 4;
+}
 
-    .navbar-link {
-      font-size: 25px;  
-        color: aqua;
-    }
-            
-.hero { 
-position: relative; 
-padding-block-start: 100px; 
-background-color: lightblue; 
-height: 400px; 
-background-image: url(""); 
-background-repeat: no-repeat;
-/* with background you add an image inside url. From online or my documetns */
+.header .container {
+  /* this is selector wants to style the container that only direct child of the header */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  height: 50px;
+  align-items: center;
+  padding-inline: 50px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 16px;
+}
+/* diplay flex allow the elements to side by side. / gap: 16px; }  */
+
+.navbar-link {
+  font-size: 25px;
+  color: aqua;
+}
+
+.hero {
+  position: relative;
+  padding-block-start: 100px;
+  background-color: lightblue;
+  height: 400px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  /* with background you add an image inside url. From online or my documetns */
 }
 
 .subtitle {
-font-size: 25px;    
-position: absolute;
-right: 0;
-bottom: 0;
-background-color: aqua;
-padding-inline: 10px;
-margin-inline: 40px;
-margin-block: 10px;
+  font-size: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: aqua;
+  padding-inline: 10px;
+  margin-inline: 40px;
+  margin-block: 10px;
 }
 
 /* to give space from the hero div top*/
 .section {
-padding-inline: 50px;
-padding-block: 50px;
+  padding-inline: 50px;
+  padding-block: 50px;
 }
 
-
 .section .container {
-display: flex;
-gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .section-title {
-width: 45%;
-font-size: 25px;
-border-right: 8px solid black;
+  width: 30%;
+  border-right: 8px solid black;
 }
 
 .section-title h2 {
-position: relative;
-margin-right: -300;
-margin-left: 50%;
-font-size: 50px;
-
+  display: inline-block;
+  direction: rtl;
+  width: 100px;
+  position: relative;
+  margin-left: 200px;
+  font-size: 30px;
 }
-
 
 .section-info {
-padding-inline: 20px;
-width: 50%;
+  padding-inline: 20px;
+  width: 70%;
 }
 
-    
-
-
-/* nav inside header class styling */
-.header nav {
-    padding-top: 15px;
-    margin-right: 150px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+.feature-image {
+  display: flex;
+  width: 100%;
+  padding-inline: 10px;
+  margin-bottom: 10px;
+  /* border: 5px solid #5cdde1; */
 }
 
-
-/* list inside header nav class styling */
-header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-    text-decoration: underline;
-    color: #4CA6DA;
-    text-underline-offset: 8px;
-
+.image-catalogue {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  width: 81%;
 }
-
-
-
-/* h1 inside header class styling */
-.header h1 {
-    display: inline-block;
-    font-size: 48px;
-    width: 370px;
-    height: 60px;
-    background-color: #4CA6DA   ;
-    text-align: right;
+/* Hyperlink styling */
+.header a {
+  color: #60c5ff;
+  text-decoration: none;
 }
-
-/* span pro inside header class styling */
-.header h1 .smalltxt {
-    color: #d9dcd6;
-    font-size: 16px;
-}
-
 
 /* unordered list inside header class styling */
 .header div ul {
-    list-style-type: none;
+  list-style-type: none;
 }
+
+p {
+  font-size: 20px;
+}
+
+.aboutme {
+  position: inherit;
+  width: 100%;
+  max-height: 400px;
+}
+
+.aboutme .vl {
+  position: relative;
+  border-left: 4px solid gray;
+  height: 400px;
+  margin-left: 300px;
+  margin-top: 10mm;
+}
+
+.aboutme h1 {
+  position: absolute;
+  font-size: 40px;
+  color: #4ca6da;
+  text-align: right;
+  margin-top: -100mm;
+  margin-left: 150px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.aboutme p {
+  position: absolute;
+  text-align: justify;
+  max-width: 60%;
+  margin-left: 350px;
+  margin-top: -100mm;
+}
+
+.work {
+  text-align: center;
+}
+
+.large-image {
+  margin: 50px;
+  margin-left: 150px;
+  width: 100%;
+  height: 500px;
+  border: 8px solid #5cdde1;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+}
+
+.small-image {
+  /* border: 5px solid #5cdde1; */
+  width: 100%;
+  height: 200px;
+  /* margin: 10px -20px 30px 30px; */
+}
+
+.work .vl {
+  position: absolute;
+  border-left: 4px solid gray;
+  height: 1070px;
+  margin-left: 300px;
+  margin-top: -280mm;
+}
+
+.work h1 {
+  position: absolute;
+  font-size: 40px;
+  color: #4ca6da;
+  text-align: right;
+  margin-top: -280mm;
+  margin-left: 150px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+}
+
+.footer .v2 {
+  position: inherit;
+  border-left: 4px solid gray;
+  height: 100px;
+  margin-left: 300px;
+  margin-top: 20mm;
+}
+
+.footer h1 {
+  position: absolute;
+  font-size: 40px;
+  color: #4ca6da;
+  text-align: right;
+  margin-top: 20mm;
+  margin-left: 110px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#foot li {
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  padding-right: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  top: 40mm;
+  left: 290px;
+  padding-left: 60px;
+}
+
+.footer #foot a {
+  color: #4ca6da;
+}
+
+/* list inside header nav class styling */
+/* header nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: underline;
+  color: #4ca6da;
+  text-underline-offset: 8px;
+} */
+
+/* h1 inside header class styling */
+/* .header h1 {
+  display: inline-block;
+  font-size: 48px;
+  width: 370px;
+  height: 60px;
+  background-color: #4ca6da;
+  text-align: right;
+} */
+
+/* span pro inside header class styling */
+/* .header h1 .smalltxt {
+  color: #d9dcd6;
+  font-size: 16px;
+} */
 
 /* list inside header styling */
-.header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-
-/* Hyperlink styling */
-.header a {
-    color:  #60C5FF;
-    text-decoration: none;
-}
-
+/* .header div ul li {
+  display: inline-block;
+  margin-left: 25px;
+} */
 
 /* Paragraph styling */
-p {
-    font-size: 20px;
-}
-
 
 /* .mainphoto {
 background-image: url(/https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
@@ -188,139 +296,3 @@ border-radius: 9px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
 } */
-
-
-.aboutme{
-    position: inherit;
-    width: 100%;
-    max-height: 400px;
-}
-
-.aboutme .vl {
-    position: relative;
-    border-left: 4px solid gray;
-    height:400px;
-    margin-left: 300px;
-    margin-top: 10mm;
-  }
-  
-
-.aboutme h1 {
-    position: absolute;
-    font-size: 40px;
-    color: #4CA6DA;
-    text-align: right;
-    margin-top: -100mm;
-    margin-left: 150px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.aboutme p{
-    position: absolute;
-    text-align: justify;
-    max-width: 60%;
-    margin-left: 350px;
-    margin-top: -100mm;
-}
-
-
-.work {
-    text-align: center;
-  }
-  
-  .image-container {
-    margin-bottom: 20px;
-  }
-  
-  .large-image {
-    margin: 50px;
-    margin-left: 150px;
-    width: 60%;
-    height: 500px;
-    border: 8px solid #5CDDE1;
-  }
-  
-  .image-row {
-    display: flex;
-    justify-content: center;
-
-  }
-  
-  .small-image {
-    border: 5px solid #5CDDE1;
-    width: 30%;
-    height: 200px;
-    margin: 10px -20px 30px 30px;
-    
-  }
-
-
-
-  .work .vl {
-    position: absolute;
-    border-left: 4px solid gray;
-    height: 1070px;
-    margin-left: 300px;
-    margin-top: -280mm;
-
-   
-  }
-
-  .work h1{
-    position: absolute;
-    font-size: 40px;
-    color: #4CA6DA;
-    text-align: right;
-    margin-top: -280mm;
-    margin-left: 150px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.footer{
-    position: absolute;
-    width: 100%;
-    
-}
-
-.footer .v2 {
-    position: inherit;
-    border-left: 4px solid gray;
-    height: 100px;
-    margin-left: 300px;
-    margin-top: 20mm;
-   
-  }
-
-.footer h1{
-    position: absolute;
-    font-size: 40px;
-    color: #4CA6DA;
-    text-align: right;
-    margin-top: 20mm;
-    margin-left: 110px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-#foot li {
-    display: inline-block;
-    position: relative;
-    list-style-type: none;
-    padding-right: 20px;
-    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   top: 40mm;
-    left: 290px;
-    padding-left: 60px;
-    
-    
-}
-
-
-.footer #foot a{
-    color: #4CA6DA;;
-}
-
-
-

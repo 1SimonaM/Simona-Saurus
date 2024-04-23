@@ -65,6 +65,40 @@ margin-inline: 40px;
 margin-block: 10px;
 }
 
+/* to give space from the hero div top*/
+.section {
+padding-inline: 50px;
+padding-block: 50px;
+}
+
+
+.section .container {
+display: flex;
+gap: 10px;
+}
+
+.section-title {
+width: 45%;
+font-size: 25px;
+border-right: 8px solid black;
+}
+
+.section-title h2 {
+position: relative;
+margin-right: -300;
+margin-left: 50%;
+font-size: 50px;
+
+}
+
+
+.section-info {
+padding-inline: 20px;
+width: 50%;
+}
+
+    
+
 
 /* nav inside header class styling */
 .header nav {

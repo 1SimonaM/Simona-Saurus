@@ -9,9 +9,7 @@ body {
   background-color: #eaeaea; /* background-color: white; */
   width: 100%;
 }
-
-/* Header styling - classe selector match ln 12 header class="header">*/
-
+/* HEADER -- styling - classe selector match ln 12 header class="header">*/
 .header {
   position: absolute;
   top: 0; /*at the very top there is no gap between the parent & child- its very closet to the top of the screen*/
@@ -31,6 +29,12 @@ body {
   align-items: center;
   padding-inline: 50px;
 }
+/* Match anchor tag (or element) on ln 20, to 23 which is a direct grand-child of the header*/
+.header a {
+  color: lightblue;
+  text-decoration: none;
+}
+
 /* navbar-list class selector match ln 19 <ul class="navbar-list">*/
 .navbar-list {
   display: flex;
@@ -41,13 +45,12 @@ body {
 li><a href="#work" class="navbar-link">Work</a></li>
 <li><a href="#contactme" class="navbar-link">Contact me</a></li>
 <li><a href="#Resume" class="navbar-link">Resume</a></li>*/
-
 .navbar-link {
   font-size: 25px;
-  color: aqua;
+  color: lightblue;
   text-decoration: underline;
 }
-
+/* HERO */
 /* class hero match line 31 <div class="hero"> on html. */
 .hero {
   position: relative;
@@ -56,6 +59,11 @@ li><a href="#work" class="navbar-link">Work</a></li>
   height: 400px;
   background-image: url(""); 
   background-repeat: no-repeat;
+}.card {
+  background-image: url("");
+  width: 100%;
+  height: 100px;
+  border: 5px solid #5cdde1;
 }
 
 /* match line 33 on htmal - <div class="subtitle"> */
@@ -64,7 +72,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: aqua;
+  background-color: lightblue;
   padding-inline: 10px;
   margin-inline: 40px;
   margin-block: 10px;
@@ -75,7 +83,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
   padding-inline: 50px;
   padding-block: 50px;
 }
-
+/* Section 2 - Work match ln 68 */
 /* match the <div class="container"> on ln 42 html which is a direct child of session*/
 .section .container {
   display: flex;
@@ -104,7 +112,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
 }
 /* match  <div class="featured-work"> ln 75*/
 .featured-work {
-  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+  background-image: url("");
   display: flex;
   width: 100%;
   margin-bottom: 10px;
@@ -119,8 +127,27 @@ li><a href="#work" class="navbar-link">Work</a></li>
   padding-block: 8px;
 }
 /* Match <div class="card">, <div class="card">ln 85, <div class="card"> ln 92, <div class="card"> ln 101, ln 108*/
-.card {
-  background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg");
+
+.card-1 {
+  background-image: url("");
+  width: 100%;
+  height: 100px;
+  border: 5px solid #5cdde1;
+}
+.card-2 {
+  background-image: url("");
+  width: 100%;
+  height: 100px;
+  border: 5px solid #5cdde1;
+}
+.card-3 {
+  background-image: url("");
+  width: 100%;
+  height: 100px;
+  border: 5px solid #5cdde1;
+}
+.card-4 {612x612.jpg
+  background-image: url("");
   width: 100%;
   height: 100px;
   border: 5px solid #5cdde1;
@@ -141,17 +168,17 @@ li><a href="#work" class="navbar-link">Work</a></li>
   margin-block: 20px;
   padding-inline: 10px;
 }
-
+/* Match ln 126 <ul class="contact-list"> */
 .contact-list {
   display: flex;
   justify-content: space-between;
   gap: 15px;
 }
-
+/* Match ln <div class="cont-me"> instead than name it container */
 .cont-me {
   padding-block: 20px;
 }
-
+/* Match 126  <ul class="contact-list"> Parent and child achor <a> list from ln 127-131. */
 .contact-list a {
   text-decoration: underline;
   color: black;
@@ -160,19 +187,21 @@ li><a href="#work" class="navbar-link">Work</a></li>
 font-weight: bold;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+/* Match ln 127-131 <li> which is direct child of list <ul class="contact-list">*/
 .contact-list li {
   list-style-type: none;
 }
 
-/* Hyperlink styling */
-.header a {
-  color: #60c5ff;
-  text-decoration: none;
+/* Media Query Responsinve for large 575px */
+@media (min-width: 575px) {
+.section .container {
+flex-direction: column; 
+ 
+}
 }
 
 
-.work {
-  text-align: center;
-}
+
+
+
 

@@ -4,13 +4,13 @@
   margin: 0;
 }
 
-/* Body styling */
+/* Body element selector match ln 10 htmml */
 body {
   background-color: #eaeaea; /* background-color: white; */
   width: 100%;
 }
 
-/* Header styling */
+/* Header styling - classe selector match ln 12 header class="header">*/
 
 .header {
   position: absolute;
@@ -21,7 +21,7 @@ body {
   padding-block: 10px;
   z-index: 4;
 }
-
+/* Header containe match  <div class="container"> is a direct chld of the header*/
 .header .container {
   /* this is selector wants to style the container that only direct child of the header */
   display: flex;
@@ -31,12 +31,16 @@ body {
   align-items: center;
   padding-inline: 50px;
 }
-
+/* navbar-list class selector match ln 19 <ul class="navbar-list">*/
 .navbar-list {
   display: flex;
   gap: 16px;
 }
-/* diplay flex allow the elements to side by side. / gap: 16px; }  */
+/* .navbar-link class selector match ln 20 -23  <ul class="navbar-list">
+<li><a href="#aboutme" class="navbar-link">About me</a></li>
+li><a href="#work" class="navbar-link">Work</a></li>
+<li><a href="#contactme" class="navbar-link">Contact me</a></li>
+<li><a href="#Resume" class="navbar-link">Resume</a></li>*/
 
 .navbar-link {
   font-size: 25px;
@@ -44,16 +48,17 @@ body {
   text-decoration: underline;
 }
 
+/* class hero match line 31 <div class="hero"> on html. */
 .hero {
   position: relative;
   padding-block-start: 100px;
   background-color: lightblue;
   height: 400px;
-  background-image: url("");
+  background-image: url(""); 
   background-repeat: no-repeat;
-  /* with background you add an image inside url. From online or my documetns */
 }
 
+/* match line 33 on htmal - <div class="subtitle"> */
 .subtitle {
   font-size: 25px;
   position: absolute;
@@ -81,13 +86,14 @@ body {
   border-right: 8px solid black;
 }
 
+/* about me, work, contact me, margins inside the section title area  */
 .section-title h2 {
   display: inline-block;
   direction: rtl;
   width: 100px;
   position: relative;
-  margin-left: 200px;
-  font-size: 30px;
+  margin-left: 80%;
+  font-size: 50px;
 }
 
 .section-info {
@@ -147,201 +153,24 @@ body {
 .contact-list a {
   text-decoration: underline;
   color: black;
-  font-size: 23px;
+  font-size: 25px;
   align-items: center;
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contact-list li {
   list-style-type: none;
 }
-.small-image {
-  border: 5px solid #5cdde1;
-  height: auto;
-  width: 50%;
-}
 
-.large-image {
-  border: 5px solid #5cdde1;
-  width: 100%;
-}
 /* Hyperlink styling */
 .header a {
   color: #60c5ff;
   text-decoration: none;
 }
 
-/* unordered list inside header class styling */
-.header div ul {
-  list-style-type: none;
-}
-
-p {
-  font-size: 20px;
-}
-
-.aboutme {
-  position: inherit;
-  width: 100%;
-  max-height: 400px;
-}
-
-.aboutme .vl {
-  position: relative;
-  border-left: 4px solid gray;
-  height: 400px;
-  margin-left: 300px;
-  margin-top: 10mm;
-}
-
-.aboutme h1 {
-  position: absolute;
-  font-size: 40px;
-  color: #4ca6da;
-  text-align: right;
-  margin-top: -100mm;
-  margin-left: 150px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.aboutme p {
-  position: absolute;
-  text-align: justify;
-  max-width: 60%;
-  margin-left: 350px;
-  margin-top: -100mm;
-}
 
 .work {
   text-align: center;
 }
 
-.large-image {
-  margin: 50px;
-  margin-left: 150px;
-  width: 100%;
-  height: 500px;
-  border: 8px solid #5cdde1;
-}
-
-.image-row {
-  display: flex;
-  justify-content: center;
-}
-
-.work .vl {
-  position: absolute;
-  border-left: 4px solid gray;
-  height: 1070px;
-  margin-left: 300px;
-  margin-top: -280mm;
-}
-
-.work h1 {
-  position: absolute;
-  font-size: 40px;
-  color: #4ca6da;
-  text-align: right;
-  margin-top: -280mm;
-  margin-left: 150px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.footer {
-  position: absolute;
-  width: 100%;
-}
-
-.footer .v2 {
-  position: inherit;
-  border-left: 4px solid gray;
-  height: 100px;
-  margin-left: 300px;
-  margin-top: 20mm;
-}
-
-.footer h1 {
-  position: absolute;
-  font-size: 40px;
-  color: #4ca6da;
-  text-align: right;
-  margin-top: 20mm;
-  margin-left: 110px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-#foot li {
-  display: inline-block;
-  position: relative;
-  list-style-type: none;
-  padding-right: 20px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  top: 40mm;
-  left: 290px;
-  padding-left: 60px;
-}
-
-.footer #foot a {
-  color: #4ca6da;
-}
-
-/* list inside header nav class styling */
-/* header nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-  text-decoration: underline;
-  color: #4ca6da;
-  text-underline-offset: 8px;
-} */
-
-/* h1 inside header class styling */
-/* .header h1 {
-  display: inline-block;
-  font-size: 48px;
-  width: 370px;
-  height: 60px;
-  background-color: #4ca6da;
-  text-align: right;
-} */
-
-/* span pro inside header class styling */
-/* .header h1 .smalltxt {
-  color: #d9dcd6;
-  font-size: 16px;
-} */
-
-/* list inside header styling */
-/* .header div ul li {
-  display: inline-block;
-  margin-left: 25px;
-} */
-
-/* Paragraph styling */
-
-/* .mainphoto {
-background-image: url(/https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
-display: block;
-height: 100px;
-width: 100%;
-background-size: cover;
-background-position: center;
-border-radius: 9px;
-}
-  */
-
-/* .overlay-text{
-    position: absolute;
-    top: 63%; 
-    left: 70%; 
-    transform: translate(-50%, -50%); 
-    background-color: #4CA6DA; 
-    color: black; 
-    padding: 10px 20px; 
-    font-size: 35px; 
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bolder;
-} */

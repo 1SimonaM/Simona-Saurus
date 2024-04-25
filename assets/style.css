@@ -40,8 +40,7 @@ body {
 
 /* navbar-list class selector match ln 19 <ul class="navbar-list">*/
 .navbar-list {
-  display: flex;
-  gap: 16px;
+  display: none; 
 }
 
 /* .navbar-link class selector match ln 20 -23  <ul class="navbar-list">
@@ -96,6 +95,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
 /* match the <div class="container"> on ln 42 html which is a direct child of session*/
 .section .container {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -190,6 +190,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
 /* Match ln 126 <ul class="contact-list"> */
 .contact-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
 }
@@ -215,40 +216,45 @@ li><a href="#work" class="navbar-link">Work</a></li>
   list-style-type: none;
 }
 
-/* Media Queries - responsive layouts */
-
-body {
-  color: blueviolet;
-}
-
-.title {
-  font-size: 4rem;
-}
-
-.subtitle {
-  font-size: 4rem;
-}
-
-@media and all (max-width: 575px) {
-  body {
-    color: rgb(187, 205, 25);
+/* Media Queries - responsive layouts we are goin to mange only orientation, max-width and min-width */
+@media (min-width: 575px){
+  .navbar-list {
+    display: flex;
+    gap: 16px;
+  } 
+  .contact-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
   }
-}
-
-@media (orientation: landscape), (max-width: 500px) {
-  .title {
-    color: grey;
+  .section .container {
+    display: flex;
+    gap: 12px;
   }
-}
-
-@media (orientation: portrait) {
-  .subtitle {
-    color: darkblue;
+  .section-title {
+    width: 100%;
+    border-right: 8px solid rgb(55, 78, 101);
   }
+.section-info {
+  padding-inline: 10px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12;
+}
+.section-title h2 {
+  display: inline-block;
+  direction: ltr;
+  width: 100px;
+  position: relative;
+  margin-left: 5%;
+  font-size: 50px;
+}
 }
 
-/* Media Query Responsinve for large 575px */
-/* @media (max-width: 575px) {
-.section .container {
-flex-direction: column; 
-} */
+
+
+
+
+
+/* Media Queries - responsive layouts we are goin to mange only orientation, max-width and min-width */
+

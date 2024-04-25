@@ -44,17 +44,35 @@ body {
   gap: 16px;
 } 
 
-/* .navbar-link class selector match ln 20 -23  <ul class="navbar-list">
-<li><a href="#aboutme" class="navbar-link">About me</a></li>
-li><a href="#work" class="navbar-link">Work</a></li>
-<li><a href="#contactme" class="navbar-link">Contact me</a></li>
-<li><a href="#Resume" class="navbar-link">Resume</a></li>*/
 .navbar-link {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
   color: lightblue;
   text-decoration: underline;
+  display: inline-block;
+position: relative;
 }
+
+/* Pseudo code */
+.navbar-link::after {
+content: "";
+position: absolute;
+width: 100%;
+transform: scaleX(0);
+height: 2px;
+bottom: 0;
+left: 0;
+background-color: darkmagenta;
+transform-origin: bottom right;
+transition: transform 0.25s ease-out;
+text-underline-offset: 8px;
+}
+
+.navbar-link:hover::after{
+transform:scaleX(1);
+transform-origin: bottom left;
+}
+
 
 /* HERO */
 /* class hero match line 31 <div class="hero"> on html. */
@@ -193,7 +211,33 @@ li><a href="#work" class="navbar-link">Work</a></li>
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
+  position: relative;
 }
+.contact-link {
+display: inline-block;
+position: relative;
+}
+
+
+.contact-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: darkmagenta;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  text-underline-offset: 8px;
+  }
+  
+  .contact-link:hover::after{
+  transform:scaleX(1);
+  transform-origin: bottom left;
+  }
+  
 /* Match ln <div class="cont-me"> instead than name it container */
 .cont-me {
   padding-block: 20px;
@@ -307,4 +351,5 @@ li><a href="#work" class="navbar-link">Work</a></li>
   }
 }
 
+/* Everything is in order for the media queries and rest of header, nav, down to contact link list with the pseude code hover */
 

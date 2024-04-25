@@ -43,12 +43,12 @@ body {
   display: flex;
   gap: 16px;
 }
+
 /* .navbar-link class selector match ln 20 -23  <ul class="navbar-list">
 <li><a href="#aboutme" class="navbar-link">About me</a></li>
 li><a href="#work" class="navbar-link">Work</a></li>
 <li><a href="#contactme" class="navbar-link">Contact me</a></li>
 <li><a href="#Resume" class="navbar-link">Resume</a></li>*/
-
 .navbar-link {
   font-size: 25px;
   color: lightblue;
@@ -57,7 +57,6 @@ li><a href="#work" class="navbar-link">Work</a></li>
 
 /* HERO */
 /* class hero match line 31 <div class="hero"> on html. */
-
 .hero {
   position: relative;
   padding-block-start: 100px;
@@ -122,14 +121,13 @@ li><a href="#work" class="navbar-link">Work</a></li>
 }
 
 /* match  <div class="featured-work"> ln 75*/
-
 .featured-work {
   background-image: url("/assets/Images/67946c5a-32fa-4946-9eb2-720138c5ef75.JPG");
   display: flex;
   width: 100%;
   margin-bottom: 10px;
   border: 5px solid lightblue;
-  height: 150px;
+  height: 180px;
 }
 
 /* Match <div class="work-card"> ln 84 html */
@@ -137,7 +135,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  padding-block: 8px;
+  padding-block: 10px; 
 }
 
 /* Match <div class="card">, <div class="card">ln 85, <div class="card"> ln 92, <div class="card"> ln 101, ln 108*/
@@ -181,7 +179,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
   display: inline-block;
   background-color: lightblue;
   position: relative;
-  margin-block: 20px;
+  margin-block: 25px;
   padding-inline: 10px;
 }
 

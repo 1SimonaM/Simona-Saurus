@@ -160,6 +160,11 @@ transform-origin: bottom left;
   padding-block: 10px;
 }
 
+/* match html ln 87 */
+.card:hover {
+opacity: 85%;
+color: green;
+}
 /* Match <div class="card">, <div class="card">ln 85, <div class="card"> ln 92, <div class="card"> ln 101, ln 108*/
 .card-1 {
   background-image: url("/assets/Images/LED_Wall-240_F_222683930_mXWfHnOk9spCYOyEhqXNSWbWhZd4dFKF.jpg");

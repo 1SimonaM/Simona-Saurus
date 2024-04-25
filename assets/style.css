@@ -139,7 +139,7 @@ li><a href="#work" class="navbar-link">Work</a></li>
   display: flex;
   justify-content: space-between;
   gap: 15px;
-  padding-block: 10px; 
+  padding-block: 10px;
 }
 
 /* Match <div class="card">, <div class="card">ln 85, <div class="card"> ln 92, <div class="card"> ln 101, ln 108*/
@@ -207,12 +207,44 @@ li><a href="#work" class="navbar-link">Work</a></li>
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
- /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+/* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
- 
+
 /* Match ln 127-131 <li> which is direct child of list <ul class="contact-list">*/
 .contact-list li {
   list-style-type: none;
+}
+
+/* Media Queries - responsive layouts */
+
+body {
+  color: blueviolet;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.subtitle {
+  font-size: 4rem;
+}
+
+@media and all (max-width: 575px) {
+  body {
+    color: rgb(187, 205, 25);
+  }
+}
+
+@media (orientation: landscape), (max-width: 500px) {
+  .title {
+    color: grey;
+  }
+}
+
+@media (orientation: portrait) {
+  .subtitle {
+    color: darkblue;
+  }
 }
 
 /* Media Query Responsinve for large 575px */
@@ -220,11 +252,3 @@ li><a href="#work" class="navbar-link">Work</a></li>
 .section .container {
 flex-direction: column; 
 } */
-@media only screen and (max-width: 500px) {
-  body {
-  background-color: lightblue;
-  }
-}
-
-
-

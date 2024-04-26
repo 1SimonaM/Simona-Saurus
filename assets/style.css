@@ -21,7 +21,7 @@ body {
   z-index: 4;
 }
 
-/* Header containe match  <div class="container"> is a direct chld of the header*/
+/* Header container match  <div class="container"> is a direct chld of the header*/
 .header .container {
   /* this is selector wants to style the container that only direct child of the header */
   display: flex;

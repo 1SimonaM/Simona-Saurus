@@ -82,7 +82,7 @@ transform-origin: bottom left;
   padding-block-start: 100px;
   background-color: lightblue;
   height: 400px;
-  background-image: url("/assets/Images/0f96da3f-e38c-49c0-807c-c30bccc0d67f.JPG");
+  background-image: url("/assets/Images/BackgroundLarge.JPG");
   background-repeat: repeat;
 }
 
@@ -167,7 +167,7 @@ margin-bottom: 60px;
 
 /* match  <div class="featured-work"> ln 75*/
 .featured-work {
-  background-image: url("/assets/Images/67946c5a-32fa-4946-9eb2-720138c5ef75.JPG");
+  background-image: url("/assets/Images/redbg.JPG");
   display: flex;
   width: 100%;
   margin-bottom: 10px;
@@ -190,26 +190,26 @@ color: green;
 }
 /* Match <div class="card">, <div class="card">ln 85, <div class="card"> ln 92, <div class="card"> ln 101, ln 108*/
 .card-1 {
-  background-image: url("/assets/Images/LED_Wall-240_F_222683930_mXWfHnOk9spCYOyEhqXNSWbWhZd4dFKF.jpg");
+  background-image: url("/assets/Images/Calculator.jpg");
   width: 100%;
   height: 100px;
   border: 5px solid lightblue;
 }
 .card-2 {
-  background-image: url("/assets/Images/Calculator-istockphoto-654067468-612x612.jpg");
+  background-image: url("/assets/Images/Calculator.jpg");
   width: 100%;
   height: 100px;
   border: 5px solid lightblue;
 }
 .card-3 {
-  background-image: url("/assets/Images/Pastel_Puzzels-istockphoto-1299443466-612x612.jpg");
+  background-image: url("/assets/Images/Pastel_Puzzels.jpg");
   width: 100%;
   height: 100px;
   border: 5px solid lightblue;
 }
 
 .card-4 {
-  background-image: url("/assets/Images/Run_Buddy-istockphoto-1726132314-612x612.jpg");
+  background-image: url("/assets/Images/Run_Buddy.jpg");
   width: 100%;
   height: 100%;
   border: 5px solid lightblue;

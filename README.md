@@ -25,13 +25,24 @@ https://github.com/juhuyoon
 https://github.com/ManuelP02
 
 
-## Links
+## Links for my Portfolio
 
 https://github.com/1SimonaM/my-Portfolio
 
 http://127.0.0.1:5501/index.html
 
 
+
+## My prior Repositories
+
+https://1simonam.github.io/Go_Blog/
+
+https://1simonam.github.io/Payroll-Software/
+
+https://1simonam.github.io/Orion-Jut-Project/
+
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
+

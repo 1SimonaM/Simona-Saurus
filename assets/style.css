@@ -38,6 +38,7 @@ body {
   text-decoration: underline;
 }
 
+
 /* navbar-list class selector match ln 19 <ul class="navbar-list">*/
 .navbar-list {
   display: flex;
@@ -84,6 +85,28 @@ transform-origin: bottom left;
   background-image: url("/assets/Images/0f96da3f-e38c-49c0-807c-c30bccc0d67f.JPG");
   background-repeat: repeat;
 }
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.SimonAM {
+margin-inline: 50px;
+margin-block: 20px;
+position: absolute;
+margin-left: 100px;
+border-radius: 100%;
+bottom: 0;
+border: 1px solid;
+background-color: crimson;
+height: 200px;
+width: 200px;
+margin-bottom: 60px;
+}
+
+
 
 .card {
   background-image: url("");
